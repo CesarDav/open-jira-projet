@@ -3,6 +3,8 @@ import { createContext } from 'react'
 
 interface ContexProps {
     sideMenuOpen: boolean;
+    openSideMenu: () => void;
+    closeSideMenu: () => void
 }
 
 

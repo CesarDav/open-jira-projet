@@ -1,11 +1,11 @@
-import { UIState } from ".";
+import { UIState } from '.';
 
 // La funcion pura no tiene que ser asincrono.
 // Se epsera que siempre regre un nuevo estado y no una mutacion del estado.
 
 type UIActionType =
-    | { type: "UI - Open Sidebar", }
-    | { type: "UI - Close Sidebar", }
+    | { type: 'UI - Open Sidebar', }
+    | { type: 'UI - Close Sidebar', }
 
 export const uiReducer = (state: UIState, action: UIActionType): UIState => {
 
